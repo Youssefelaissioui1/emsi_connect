@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/#.webp',
+                'assets/images/emsi1.webp',
                 height: 160,
                 width: double.infinity,
                 fit: BoxFit.cover,
