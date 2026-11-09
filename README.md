@@ -1,17 +1,36 @@
-# emsi_connect
 
-A new Flutter project.
+# EMSI Connect – Application de Gestion des Cours
 
-## Getting Started
+## Description du projet
 
-This project is a starting point for a Flutter application.
+EMSI Connect est une application mobile académique développée avec **Flutter et Dart** dans le cadre des travaux pratiques à l'EMSI.
 
-A few resources to get you started if this is your first Flutter project:
+L'objectif est de concevoir une application facilitant l'accès aux informations académiques et la gestion des cours pour les étudiants.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Fonctionnalités
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Page d'accueil (Home Page) :** interface principale pour accéder aux différentes fonctionnalités de l'application.
+- **Gestion des cours :** organisation et consultation des informations relatives aux cours.
+- **Navigation :** navigation entre les différentes interfaces de l'application.
+- **Profil étudiant :** affichage des informations personnelles et académiques de l'étudiant.
+
+## Technologies utilisées
+
+- Flutter
+- Dart
+- Material Design
+- Android Studio / Visual Studio Code
+- Git & GitHub
+
+## État du développement
+
+<badge>En cours de développement</badge>
+
+Le projet est actuellement en phase de développement, avec la conception et l'amélioration progressive de la page d'accueil et des fonctionnalités de gestion des cours.
+
+## Objectifs pédagogiques
+
+- Maîtriser les bases du développement mobile avec Flutter.
+- Comprendre les widgets et la structure d'une application Flutter.
+- Concevoir des interfaces utilisateur intuitives.
+- Mettre en pratique la navigation et la réutilisation des composants.
