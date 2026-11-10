@@ -51,6 +51,7 @@ class HomePage extends StatelessWidget {
 
               const SizedBox(height: 24),
 
+              // Première ligne : deux rubriques
               Row(
                 children: [
                   Expanded(
@@ -59,7 +60,9 @@ class HomePage extends StatelessWidget {
                       title: 'Mes cours',
                     ),
                   ),
-                  Expanded(
+                  const SizedBox(width: 12),
+                  Flexible(
+                          fit: FlexFit.loose,
                     child: _buildCard(
                       icon: Icons.calendar_month,
                       title: 'Planning',
@@ -68,11 +71,15 @@ class HomePage extends StatelessWidget {
                 ],
               ),
 
+              const SizedBox(height: 12),
+
+              // Deuxième ligne : deux rubriques
               Row(
                 children: [
                   Expanded(
                     child: _buildCard(icon: Icons.person, title: 'Mon profil'),
                   ),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: _buildCard(
                       icon: Icons.task_alt,
@@ -99,16 +106,17 @@ class HomePage extends StatelessWidget {
   Widget _buildCard({required IconData icon, required String title}) {
     return Container(
       padding: const EdgeInsets.all(16),
-      margin: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: Colors.green.shade50,
+        color: Colors.blue.shade50,
         borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.blue.shade100),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, size: 40, color: Colors.green),
+          Icon(icon, size: 40, color: Colors.blue),
           const SizedBox(height: 8),
-          Text(title),
+          Text(title, textAlign: TextAlign.center),
         ],
       ),
     );
