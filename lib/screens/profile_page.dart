@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+
+import 'student_details_page.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -19,7 +20,6 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-
               // Carte étudiant avec Stack
               Container(
                 decoration: BoxDecoration(
@@ -29,7 +29,6 @@ class ProfilePage extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-
                     // Bandeau et photo
                     SizedBox(
                       height: 150,
@@ -78,11 +77,7 @@ class ProfilePage extends StatelessWidget {
 
                     const SizedBox(height: 12),
 
-                    const Icon(
-                      Icons.school,
-                      size: 32,
-                      color: Colors.blue,
-                    ),
+                    const Icon(Icons.school, size: 32, color: Colors.blue),
 
                     const SizedBox(height: 16),
                   ],
@@ -94,10 +89,7 @@ class ProfilePage extends StatelessWidget {
               // Informations personnelles
               const Text(
                 'Informations personnelles',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
 
               const SizedBox(height: 16),
@@ -118,11 +110,7 @@ class ProfilePage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              _buildInfo(
-                icon: Icons.layers,
-                label: 'Niveau',
-                value: 'S5',
-              ),
+              _buildInfo(icon: Icons.layers, label: 'Niveau', value: 'S5'),
 
               const SizedBox(height: 12),
 
@@ -170,6 +158,21 @@ class ProfilePage extends StatelessWidget {
               ),
 
               const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const StudentDetailsPage(
+                        studentName: 'Sara El Amrani',
+                        program: 'Informatique',
+                      ),
+                    ),
+                  );
+                },
+                child: const Text('Voir les détails'),
+              ),
+              const SizedBox(height: 24),
 
               // Trois icônes pour tester MainAxisAlignment
               Row(
@@ -199,18 +202,12 @@ class ProfilePage extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.blue.shade50,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: Colors.blue.shade100,
-        ),
+        border: Border.all(color: Colors.blue.shade100),
       ),
 
       child: Row(
         children: [
-          Icon(
-            icon,
-            color: Colors.blue,
-            size: 24,
-          ),
+          Icon(icon, color: Colors.blue, size: 24),
 
           const SizedBox(width: 12),
 
@@ -220,10 +217,7 @@ class ProfilePage extends StatelessWidget {
               children: [
                 Text(
                   label,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey,
-                  ),
+                  style: const TextStyle(fontSize: 14, color: Colors.grey),
                 ),
 
                 const SizedBox(height: 4),
