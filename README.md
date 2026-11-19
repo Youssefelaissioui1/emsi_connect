@@ -168,7 +168,6 @@ flutter build windows
 - Les paramètres ne sont pas persistés après redémarrage.
 - Le bouton **Modifier** affiche uniquement un message de débogage.
 - Le test fourni est un test par défaut et doit être adapté à l'application.
-- L'image `profil.jpg` est référencée mais n'est pas actuellement présente dans `assets/images`.
 
 ## Améliorations possibles
 
@@ -179,7 +178,6 @@ flutter build windows
 - Ajouter une base de données pour les cours
 - Mettre à jour les tests automatisés
 - Ajouter les tests unitaires et d'intégration
-- Ajouter l'écran « À propos »
 
 ## Auteur
 
